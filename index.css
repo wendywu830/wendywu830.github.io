@@ -7,8 +7,8 @@
   --content-text: #3b3b3b;
   --content-corners: 10px;
   --borders: #e0e0e0;
-  --drop-shadows: 1px 1px 3px 2px var(--borders),
-                -1px 1px 3px 2px var(--borders);
+  --drop-shadows: 1px 1px 3px var(--borders),
+                -1px 1px 3px var(--borders);
 
 }
 html {
@@ -61,7 +61,7 @@ a:hover {
 }
 
 #description {
-  font-size: 18px;
+  font-size: 16.5px;
 }
 
 .icon {
