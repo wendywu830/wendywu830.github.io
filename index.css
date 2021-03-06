@@ -1,21 +1,82 @@
+:root {
+    
+  /* ----- colors ----- */
+  --gradient-start: #7986cb;
+  --gradient-end: #e1bee7;
+  --content-background: #fff;
+  --content-text: #3b3b3b;
+  --content-corners: 10px;
+  --borders: #e0e0e0;
+  --drop-shadows: 1px 1px 3px 2px var(--borders),
+                -1px 1px 3px 2px var(--borders);
+
+}
 html {
-  font-family: 'Lato', sans-serif;
-  background-image: linear-gradient(to bottom right, #8fd3e0, #f5f7c9);
+  font-family: 'Public Sans', sans-serif;
+  background-image: linear-gradient(to bottom right, var(--gradient-start), #FFF);
   height: 100%;
+  color: var(--content-text);
 }
 
 #info {
-  margin: 120px 300px;
+  margin: 120px 300px; 
+  background-color: var(--content-background);
+  position: relative;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: var(--content-corners);
+  box-shadow: var(--drop-shadows);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.title h2 {
+  letter-spacing: 2px;
+  line-height: 160%;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title p {
+  margin: 0;
+  padding: 3px
+}
+
+a {
+  color: rgb(0, 0, 0); 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f18baf;
 }
 
 #description {
   font-size: 18px;
 }
 
-h3 {
-  margin: 0
+.icon {
+  background: linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end));
+  border-radius: 50%;
+  padding: 8px;
+  display: inline-block;
 }
-img {
-  width: 18%;
-  height: 18%;
+
+.icon img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #f5f6ff;
 } 
