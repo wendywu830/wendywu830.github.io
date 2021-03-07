@@ -1,15 +1,14 @@
-:root {
-    
+:root { 
   /* ----- colors ----- */
   --gradient-start: #7986cb;
   --gradient-end: #e1bee7;
+  --gradient-start-light: #979fc5;
   --content-background: #fff;
   --content-text: #3b3b3b;
   --content-corners: 10px;
   --borders: #e0e0e0;
   --drop-shadows: 1px 1px 3px var(--borders),
                 -1px 1px 3px var(--borders);
-
 }
 html {
   font-family: 'Public Sans', sans-serif;
@@ -57,11 +56,25 @@ a {
 }
 
 a:hover {
-  color: #f18baf;
+  color: var(--gradient-start);
 }
 
 #description {
   font-size: 16.5px;
+}
+
+#links a {
+  border-radius: 2em;
+  padding: 0.5em 0.75em;
+  box-sizing: border-box;
+  margin: 0.25em;
+  background-color: var(--gradient-start-light);
+  box-shadow: 0 0 3px #ddd;
+  font-size: 14px
+}
+
+#links a:hover {
+  background-color: #FFF;
 }
 
 .icon {
@@ -75,7 +88,7 @@ a:hover {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  padding: 6px;
+  padding: 3px;
   display: inline-block;
   vertical-align: middle;
   background-color: #f5f6ff;
